@@ -1,5 +1,8 @@
 .card-body-stars {
-  list-style-type: none;
+  width: 200px;
+  padding-left: 0;
+  margin: 50px auto;
+  list-style: none;
 }
 
 .stars-li {

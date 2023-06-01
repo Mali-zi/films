@@ -9,7 +9,9 @@ function App(): JSX.Element {
         <Stars count={count}/>
       </div>
     );
-  } else {return <></>};
+  } else {
+    return <></>
+  };
 };
 
 export default App;
