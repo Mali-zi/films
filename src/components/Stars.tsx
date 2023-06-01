@@ -2,6 +2,9 @@ import Star from "./Star";
 interface StarsCount {
   starsCount: number;
 };
+interface Stars {
+  stars: JSX.Element[] | JSX.Element;
+};
 
 function Stars({ starsCount }: StarsCount):JSX.Element {
   const stars = [];
