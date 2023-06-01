@@ -1,3 +1,7 @@
-.App {
-  text-align: center;
+.card-body-stars {
+  list-style-type: none;
+}
+
+.stars-li {
+  display: inline-block;
 }

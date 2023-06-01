@@ -1,24 +1,20 @@
 import Star from "./Star";
 interface StarCount {
-  count: 1 | 2 | 3 | 4 | 5;
+  count: number;
 };
 
-// interface StarsType {
-//   stars: JSX.Element[] | JSX.Element;
-// };
-
-function Stars({ count }: StarCount): JSX.Element {
-  const stars = (() => {
-      for (let i = 1; i < count; i++) {
-        return (
-          <li key={i}>
-            <Star />
-          </li>
-        )
-      }
-    });
+function Stars({ count }: StarCount):JSX.Element {
+  const stars = [];
+  for (let i = 1; i < (count + 1); i++) { 
+    stars.push(
+      <li key={i} className="stars-li">
+        <Star />
+      </li>
+    )
+      };
+  
     return (
-      <ul className="card-body-stars u-clearfix">
+      <ul className="card-body-stars">
         {stars}
       </ul>
     );
